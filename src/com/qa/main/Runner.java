@@ -6,9 +6,14 @@ public class Runner {
 		
 		Results r = new Results();
 		
-		r.calcBiology(100);
-		r.calcPhysics(150);
-		r.calcChemistry(85);
+		int biology = 100;
+		int physics = 150;
+		int chemistry = 80;
+		
+		r.calcBiology(biology);
+		r.calcPhysics(chemistry);
+		r.calcChemistry(physics);
+		r.calcPercentageForAll(biology, chemistry, physics);
 		r.checkFailures();
 	}
 	

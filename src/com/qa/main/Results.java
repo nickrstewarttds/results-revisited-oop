@@ -22,6 +22,15 @@ public class Results {
 		checkFailedExam(physicsP);
 	}
 	
+	public void calcPercentageForAll(int biology, int chemistry, int physics) {
+		double biologyP = biology*100/150;
+		double chemistryP = chemistry*100/150;
+		double physicsP = physics*100/150;
+		double finalPercentage = biologyP + chemistryP + physicsP;
+		
+		System.out.println("Final Percentage: " + finalPercentage + "%");		
+	}
+	
 	public void checkFailedExam(double percentage) {
 		if (percentage < 60) {
 			failCounter++;
